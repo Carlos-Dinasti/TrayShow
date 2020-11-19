@@ -1,0 +1,71 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SlideTray</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="contenedor">
+    <header>
+      <h1>
+        Medallas
+      </h1>
+      <h2>
+        <a class="bMenu" href="index.html">Menú</a>
+      </h2>
+    </header>
+    <p class="readme">Para hacer Zoom</p>
+    <p class="readme">Windows & Mac: Ctrl +</p>
+    <p class="readme">Android: Zoom a 2 dedos</p>
+
+    <input type="checkbox" id="zoomCheck">
+    <label for="zoomCheck">
+      <div id="tray-demo" class="tray-carousel tray-theme">
+
+        <div class="item fade">
+          <img class="tray" src="img/slide (1).jpg" alt="Tray 1">
+          <!-- <iframe class="tray" src="https://drive.google.com/file/d/1CI30CgT1KL1lJ73lB_64vCKXtZ8CGIT_/preview" ></iframe> -->
+          <img class="BShield" src="img/fondo.png" alt="img">
+        </div>
+        <div class="item fade">
+          <img class="tray" src="img/slide (2).jpg" alt="Tray 2">
+          <img class="BShield" src="img/fondo.png" alt="img">
+        </div>
+        <div class="item fade">
+          <img class="tray" src="img/slide (3).jpg" alt="Tray 3">
+          <img class="BShield" src="img/fondo.png" alt="img">
+        </div>
+        <div class="item fade">
+          <img class="tray" src="img/slide (4).jpg" alt="Tray 4">
+          <img class="BShield" src="img/fondo.png" alt="img">
+        </div>
+        <div class="item fade">
+          <img class="tray" src="img/slide (5).jpg" alt="Tray 5">
+          <img class="BShield" src="img/fondo.png" alt="img">
+        </div>
+        <div class="item fade">
+          <img class="tray" src="img/slide (6).jpg" alt="Tray 6">
+          <img class="BShield" src="img/fondo.png" alt="img">
+        </div>
+      </div>
+    </label>
+    <div class="arrows">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+  </div>
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+  </div>
+  <script type="text/javascript" src="js/scripts.js"></script>
+</body>

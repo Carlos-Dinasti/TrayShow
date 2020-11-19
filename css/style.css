@@ -5,6 +5,11 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+@media print{
+  body{
+    display: none;
+  }
+}
 /* Globales */
 .contenedor{
   max-width: 1000px;
@@ -15,6 +20,44 @@ h1{
 }
 p{
   font-size: 2rem;
+}
+nav{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+@media (min-width: 768px){
+  nav{
+    grid-template-columns: 33% 33% 33%;
+  }
+}
+.enlace{
+  text-align: center;
+  width: 20rem;
+  color: black;
+  background-color: rgb(255, 201, 14);
+  text-decoration: none;
+  font-size: 3rem;
+  padding: 1.5rem;
+  margin: 1rem;
+  transition: .3s ease;
+}
+.enlace:hover{
+  color: rgb(255, 201, 14);
+  background-color: black;
+}
+.bMenu{
+  text-align: center;
+  width: 20rem;
+  color: rgb(255, 203, 14);
+  text-decoration: none;
+  font-size: 3rem;
+  padding: 1.5rem;
+  margin: 1rem;
+  transition: .3s ease;
+}
+.bMenu:hover{
+  color:white;
+  background-color: rgb(255, 201, 14);
 }
 .tray-carousel{
   width: 100%;
